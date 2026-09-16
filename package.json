@@ -1,0 +1,12 @@
+{
+  "name": "shuchi",
+  "version": "0.1.0",
+  "description": "SHUCHI — Sanitiser Hub for Clean Information — Advanced Open-Source Framework Sanitisation Tool for Multiple Air-Gapped Networks",
+  "main": "src/ui/main.js",
+  "scripts": {
+    "dev": "electron src/ui/main.js",
+    "build": "electron-builder"
+  },
+  "license": "GPL-3.0",
+  "author": "Sk Mastan <mastaanshaik37@gmail.com>"
+}

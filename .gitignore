@@ -1,0 +1,28 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Node
+node_modules/
+dist/
+out/
+
+# Build
+build/
+*.log
+
+# Test
+tests/corpus/*
+!tests/corpus/README.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.cvd
+*.tar.gz
+worm.log

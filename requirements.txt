@@ -1,0 +1,4 @@
+oletools==0.60
+yara-python==4.5.0
+pillow==10.4.0
+python-magic==0.4.27
