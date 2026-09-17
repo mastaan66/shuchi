@@ -1,10 +1,10 @@
-# SHUCHI — Sanitiser Hub for Clean Information
+# SHUCHI: Sanitiser Hub for Clean Information
 
 **Advanced Open-Source Framework Sanitisation Tool for Multiple Air-Gapped Networks**
 
 Maya OS native. Fully offline. DGQA auditable.
 
-Author: Sk Mastan, Independent Contributor, Hyderabad — mastaanshaik37@gmail.com — github.com/mastaan66
+Author: Sk Mastan, Independent Contributor, Hyderabad, mastaanshaik37@gmail.com, github.com/mastaan66
 
 Status: Work in progress. Building demo as per 15-day plan. Seeking T-Hub guidance for DGQA and user trial. For iDEX Open Challenge 19.
 
@@ -72,22 +72,22 @@ All parts are open-source (GPL/MIT) and can be checked by DGQA. Build can be mad
 
 ```
 shuchi/
-  README.md           — this file
-  ARCHITECTURE.md     — pipeline, threat model, and air-gap design
-  BUILD.md            — how to build on Maya OS
-  TESTING.md          — 130-file corpus and test steps
-  ROADMAP.md          — 15-day demo and 180-day pilot
-  LICENSE             — GPL-3.0
+  README.md           # this file
+  ARCHITECTURE.md     # pipeline, threat model, and air-gap design
+  BUILD.md            # how to build on Maya OS
+  TESTING.md          # 130-file corpus and test steps
+  ROADMAP.md          # 15-day demo and 180-day pilot
+  LICENSE             # GPL-3.0
   src/
-    pipeline/         — verify, detect, rebuild
-    cdr/              — qpdf, exiftool, Pillow, LibreOffice wrappers
-    audit/            — TPM quote, WORM log, PDF receipt
-    ui/               — Electron UI
-  rules/yara/         — 300 YARA rules
-  scripts/            — install and test scripts
-  tests/corpus/       — 130 files (clean, infected, malformed, Hindi)
-  hardware/           — N100 + TPM + printer wiring
-  docs/               — DGQA audit notes, SOP
+    pipeline/         # verify, detect, rebuild
+    cdr/              # qpdf, exiftool, Pillow, LibreOffice wrappers
+    audit/            # TPM quote, WORM log, PDF receipt
+    ui/               # Electron UI
+  rules/yara/         # 300 YARA rules
+  scripts/            # install and test scripts
+  tests/corpus/       # 130 files (clean, infected, malformed, Hindi)
+  hardware/           # N100 + TPM + printer wiring
+  docs/               # DGQA audit notes, SOP
 ```
 
 ## 6. Build
@@ -120,11 +120,11 @@ python -m tests.run_corpus
 
 | Phase | What | When |
 |-------|------|------|
-| D1 to D2 | Rig and test — Maya VM, USBGuard, EICAR | Day 1 to 2 |
-| D3 to D6 | Core build — 5 file types (PDF, DOCX, XLSX, PPTX, image) | Day 3 to 6 |
-| D7 to D9 | Log and screen — TPM log, Electron UI, Hindi check | Day 7 to 9 |
-| D10 to D11 | Corpus test — 130 files, video | Day 10 to 11 |
-| D12 to D15 | Paper and video — 2-page paper and 2-minute video by 28 Sep | Day 12 to 15 |
+| D1 to D2 | Rig and test: Maya VM, USBGuard, EICAR | Day 1 to 2 |
+| D3 to D6 | Core build: 5 file types (PDF, DOCX, XLSX, PPTX, image) | Day 3 to 6 |
+| D7 to D9 | Log and screen: TPM log, Electron UI, Hindi check | Day 7 to 9 |
+| D10 to D11 | Corpus test: 130 files, video | Day 10 to 11 |
+| D12 to D15 | Paper and video: 2-page paper and 2-minute video by 28 Sep | Day 12 to 15 |
 
 Post-grant, 180 days to 10-kiosk trial:
 
@@ -141,6 +141,6 @@ Seeking T-Hub guidance for DGQA and user trial.
 
 ## 10. Contact
 
-Sk Mastan, Independent Contributor, Hyderabad, Telangana — +91-7075439928 — mastaanshaik37@gmail.com — github.com/mastaan66
+Sk Mastan, Independent Contributor, Hyderabad, Telangana, +91-7075439928, mastaanshaik37@gmail.com, github.com/mastaan66
 
 For iDEX Open Challenge 19. Work in progress.
