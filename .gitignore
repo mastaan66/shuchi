@@ -26,3 +26,14 @@ Thumbs.db
 *.cvd
 *.tar.gz
 worm.log
+
+# Runtime
+var/
+.marscode/
+__pycache__/
+*.pyc
+venv/
+.env
+*.swp
+*.log
+

@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "input": "var/test_dirty/test.pdf",
+      "output": "var/test_clean/clean_test.pdf",
+      "timestamp": "2026-09-21T07:31:19.523893+00:00",
+      "verdict": "CLEAN_REBUILT",
+      "scan_results": [
+        {
+          "engine": "ClamAV",
+          "status": "ERROR",
+          "detail": "[Errno 2] No such file or directory: 'clamscan'"
+        },
+        {
+          "engine": "YARA",
+          "status": "CLEAN",
+          "detail": "no matches"
+        }
+      ],
+      "rebuild_status": "REBUILT",
+      "mime_type": "application/pdf",
+      "true_extension": "pdf",
+      "input_hash": "3de2b3788e3232e4fcc07525e218a18d7d81a158d452654317a044163dfb710b",
+      "output_hash": "3de2b3788e3232e4fcc07525e218a18d7d81a158d452654317a044163dfb710b",
+      "tpm_status": "NO_TPM",
+      "worm_verified": true
+    }
+  ],
+  "timestamp": "2026-09-21T07:31:19.523861+00:00"
+}
