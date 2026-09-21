@@ -8,5 +8,5 @@
     "build": "electron-builder"
   },
   "license": "GPL-3.0",
-  "author": "Sk Mastan <mastaanshaik37@gmail.com>"
+  "author": "Sk Mastan"
 }

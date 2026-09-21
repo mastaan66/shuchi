@@ -118,6 +118,12 @@ def process_file(in_path, out_path, dirty=False):
     if not is_supported(mime):
         file_result["verdict"] = "BLOCKED"
         file_result["reason"] = "TYPE NOT SUPPORTED"
+        file_result["input_hash"] = hashlib.sha256(
+            open(in_path, "rb").read()
+        ).hexdigest()
+        file_result["output_hash"] = None
+        file_result["tpm_status"] = "SKIPPED"
+        file_result["worm_verified"] = None
         return file_result
 
     scans = scan_file(in_path)
