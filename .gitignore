@@ -15,7 +15,7 @@ build/
 *.log
 
 # Test
-tests/corpus/*
+tests/corpus/README.md
 !tests/corpus/README.md
 
 # OS
@@ -37,3 +37,4 @@ venv/
 *.swp
 *.log
 
+# EICAR baseline test file
