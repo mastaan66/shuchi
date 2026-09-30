@@ -8,7 +8,7 @@ Open-source air-gapped USB sanitisation kiosk. Maya OS native. Deterministic CDR
 
 https://github.com/mastaan66/shuchi/blob/main/docs/SHUCHI_2min_demo.mp4
 
-<video src="https://github.com/mastaan66/shuchi/releases/download/v0.1.0-trl4/SHUCHI_2min_demo.mp4" width="100%" controls></video>
+<video src="https://raw.githubusercontent.com/mastaan66/shuchi/main/docs/SHUCHI_2min_demo.mp4" width="100%" controls></video>
 
 2-min Ubuntu terminal run: EICAR PASS, pipeline rebuild, 130-file corpus (BLOCKED 57 / INFECTED 54 / CLEAN 19), Hindi preservation, MITRA-Edge EN/HI + decline. Same file attached to release v0.1.0-trl4.
 
