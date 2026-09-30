@@ -4,6 +4,14 @@ Open-source air-gapped USB sanitisation kiosk. Maya OS native. Deterministic CDR
 
 <img src="docs/sketch.svg" width="100%" alt="Sketch: how SHUCHI sanitises USB files at the air gap">
 
+## Demo
+
+https://github.com/mastaan66/shuchi/blob/main/docs/SHUCHI_2min_demo.mp4
+
+<video src="docs/SHUCHI_2min_demo.mp4" width="100%" controls></video>
+
+2-min Ubuntu terminal run: EICAR PASS, pipeline rebuild, 130-file corpus (BLOCKED 57 / INFECTED 54 / CLEAN 19), Hindi preservation, MITRA-Edge EN/HI + decline. Same file attached to release v0.1.0-trl4.
+
 ## Quick start
 
 ```bash
