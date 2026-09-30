@@ -47,7 +47,7 @@ See `requirements.txt`.
 
 ## YARA rules
 
-Rules are in `rules/yara/`. 300 rules compiled.
+Rules are in `rules/yara/`. 30 rules compiled (TRL-4 freeze).
 
 ```bash
 yara -r rules/yara/index.yar tests/samples/eicar.com

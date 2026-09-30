@@ -339,3 +339,14 @@ rule Script_Injection {
     condition:
         any of ($*) and filesize > 10000
 }
+
+rule Office_Macro_AutoOpen {
+    meta:
+        description = "Office OOXML macro AutoOpen marker with vbaProject reference"
+        author = "SHUCHI"
+    strings:
+        $autoopen = "AutoOpen" nocase
+        $vbaproject = "vbaProject.bin" nocase
+    condition:
+        all of ($*) and uint32(0) == 0x04034B50
+}

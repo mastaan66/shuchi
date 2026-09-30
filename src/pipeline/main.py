@@ -90,7 +90,9 @@ def scan_file(filepath):
 
 
 def rebuild_file(in_path, out_path, file_type):
-    ext = file_type.split("/")[-1]
+    ext = SUPPORTED_TYPES.get(file_type, [None])[0]
+    if ext is None:
+        raise ValueError(f"Unsupported rebuild type: {file_type}")
     if ext == "pdf":
         rebuild_pdf(in_path, out_path)
     elif ext in ("jpg", "jpeg", "png"):

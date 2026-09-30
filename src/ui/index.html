@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHUCHI — USB Sanitisation Kiosk (TRL-4)</title>
+<style>
+  body { font-family: sans-serif; margin: 16px; background: #f7f5f2; color: #111; }
+  h1 { font-size: 18px; margin-bottom: 4px; }
+  .sub { font-size: 12px; color: #555; margin-bottom: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; background: #fff; }
+  th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: left; }
+  th { background: #eee; }
+  .row { margin: 12px 0; }
+  button { padding: 8px 14px; font-size: 14px; cursor: pointer; }
+  #hindi-label { margin-top: 12px; font-size: 14px; }
+</style>
+</head>
+<body>
+  <h1>SHUCHI — Sanitisation Kiosk (TRL-4 Demo)</h1>
+  <div class="sub">Air-gapped USB scan &amp; rebuild &bull; YARA 30 rules &bull; 5 formats: PDF, DOCX, XLSX, PPTX, JPG/PNG</div>
+
+  <div class="row">
+    <input type="file" id="file-picker" multiple>
+    <button id="scan-btn">Scan</button>
+    <button id="print-btn">Print Receipt</button>
+  </div>
+
+  <table id="file-table">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>Type</th>
+        <th>Scan Result</th>
+        <th>Rebuild Status</th>
+      </tr>
+    </thead>
+    <tbody id="file-tbody">
+      <tr><td colspan="4">No files scanned yet.</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Hindi test label: verifies Devanagari preservation through rebuild -->
+  <div id="hindi-label" lang="hi">परीक्षण: हिंदी पाठ संरक्षण — शुचि कियोस्क (नमूना: स्वच्छ फ़ाइल)</div>
+
+  <script src="./renderer.js"></script>
+</body>
+</html>

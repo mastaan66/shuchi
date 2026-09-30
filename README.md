@@ -48,7 +48,7 @@ SHUCHI is for the edge. Matisoft is for central policy. They complement. The nee
 |------|-------|
 | Platform | Maya OS, Electron + Python, N100 mini-PC with TPM 2.0, receipt printer |
 | Intake | USBGuard, udisks read-only mount, libmagic |
-| Scan | ClamAV offline, YARA 300, oletools (olevba, msodde, mraptor) |
+| Scan | ClamAV offline, YARA 30 (TRL-4 freeze), oletools (olevba, msodde, mraptor) |
 | Rebuild (CDR) | qpdf, exiftool, Pillow, LibreOffice headless |
 | Trust | tpm2-tools (TPM 2.0 quote), hash-chain WORM log, PDF receipt |
 

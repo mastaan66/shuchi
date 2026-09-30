@@ -27,7 +27,7 @@ Dirty USB
   |  +--> if not supported or mismatch --> Block, log, do not transfer
   |
   v
-[3] Scan offline — ClamAV (offline db), YARA 300, oletools/mraptor
+[3] Scan offline — ClamAV (offline db), YARA 30 rules (TRL-4 freeze), oletools/mraptor
   |  |
   |  +--> result logged per file (clean / infected / suspicious)
   |
@@ -66,7 +66,7 @@ Principle: Original never crosses. Only the rebuilt file crosses. If type is not
 
 ### Scan
 * ClamAV with offline CVD files. No freshclam to internet. Update via signed offline pack.
-* YARA 300 rules covering Office macros, PDF exploits, script files.
+* YARA 30 rules (TRL-4 freeze) covering Office macros, PDF exploits, script files.
 * oletools: olevba, msodde, mraptor for macro risk score.
 
 No cloud. All offline.
