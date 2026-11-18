@@ -1,15 +1,48 @@
 {
   "files": [
     {
-      "input": "var/test_dirty/test.pdf",
-      "output": "var/test_clean/clean_test.pdf",
-      "timestamp": "2026-09-21T07:31:19.523893+00:00",
+      "input": "/tmp/shuchi_dirty/hindi_note.docx",
+      "output": "/tmp/shuchi_clean/clean_hindi_note.docx",
+      "timestamp": "2026-09-30T09:52:47.637174+00:00",
+      "verdict": "INFECTED_REBUILT",
+      "scan_results": [
+        {
+          "engine": "ClamAV",
+          "status": "CLEAN",
+          "detail": "no threats"
+        },
+        {
+          "engine": "YARA",
+          "status": "SUSPICIOUS",
+          "detail": [
+            "Zip_Polyglot",
+            "Null_Byte_Injection"
+          ]
+        },
+        {
+          "engine": "oletools",
+          "status": "SUSPICIOUS",
+          "detail": "VBA macro detected"
+        }
+      ],
+      "rebuild_status": "REBUILT",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "true_extension": "docx",
+      "input_hash": "32f2a5a2f3913feaf934ab828b2c561a64af541f9fdf353f9f255cd6d846c269",
+      "output_hash": "1bd4a1d300b364d692971e2e84ec97837f779ac790a838e5e3302b441eb7a43a",
+      "tpm_status": "ERROR",
+      "worm_verified": true
+    },
+    {
+      "input": "/tmp/shuchi_dirty/sample_clean.pdf",
+      "output": "/tmp/shuchi_clean/clean_sample_clean.pdf",
+      "timestamp": "2026-09-30T09:52:57.107111+00:00",
       "verdict": "CLEAN_REBUILT",
       "scan_results": [
         {
           "engine": "ClamAV",
-          "status": "ERROR",
-          "detail": "[Errno 2] No such file or directory: 'clamscan'"
+          "status": "CLEAN",
+          "detail": "no threats"
         },
         {
           "engine": "YARA",
@@ -22,9 +55,24 @@
       "true_extension": "pdf",
       "input_hash": "3de2b3788e3232e4fcc07525e218a18d7d81a158d452654317a044163dfb710b",
       "output_hash": "3de2b3788e3232e4fcc07525e218a18d7d81a158d452654317a044163dfb710b",
-      "tpm_status": "NO_TPM",
+      "tpm_status": "ERROR",
       "worm_verified": true
+    },
+    {
+      "input": "/tmp/shuchi_dirty/eicar.com",
+      "output": "/tmp/shuchi_clean/clean_eicar.com",
+      "timestamp": "2026-09-30T09:53:06.509367+00:00",
+      "verdict": "BLOCKED",
+      "scan_results": [],
+      "rebuild_status": "REBUILT",
+      "mime_type": "text/plain",
+      "true_extension": null,
+      "reason": "TYPE NOT SUPPORTED",
+      "input_hash": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+      "output_hash": null,
+      "tpm_status": "SKIPPED",
+      "worm_verified": null
     }
   ],
-  "timestamp": "2026-09-21T07:31:19.523861+00:00"
+  "timestamp": "2026-09-30T09:52:47.637109+00:00"
 }

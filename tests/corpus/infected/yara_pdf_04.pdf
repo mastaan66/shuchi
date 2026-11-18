@@ -1,0 +1,10 @@
+%PDF-1.4
+% SHUCHI yara test 4
+1 0 obj
+<< /Type /Action /S /JavaScript /JS (alert(4)) >>
+endobj
+2 0 obj
+<< /Type /Catalog /OpenAction << /S /Launch /Win << /F (cmd.exe) >> >> >>
+endobj
+/JavaScript /Launch /OpenAction suspicious payload 4
+%%EOF
